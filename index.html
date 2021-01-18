@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="./Css/stylesheet.css">
+</head>
+<body>
+    <div id="headers">
+        <h1>Expense Tracker</h1>
+        <h3>Add a New Item:</h3>
+    </div>
+
+    <div id="expense_form">
+        <div class="expense_name" >
+            <label class="names" for="name">Name:</label>
+            <input type="text" id="name" placeholder="Where was the expense made?">
+        </div>
+
+        <span class="expense_date">
+            <label class="names" for="date">Date:</label>
+            <input type="date" id="date" value="mm/dd/yyyy">
+        </span>
+
+        <span class="expense_amount">
+            <label class="names" for="amount">Amount:</label>
+            <input type="text" id="amount" placeholder="">
+        </span>
+        <div class="btn">
+            <button type="button" id="button" class="button" value="Add Expense">Add Expense</button>
+            <span><button type="button" id="button2" class="button" value="Clear Table">Clear Table</button></span>
+        </div>
+    </div>
+    
+    <div id="table_section">
+        <table id="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
+
+            <tbody id = "table_body">
+
+            </tbody>
+            
+        </table>
+    </div>
+    <script src = "./javascript/index.js"></script>
+</body>
+</html>
